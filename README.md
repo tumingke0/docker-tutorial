@@ -305,7 +305,7 @@ docker logs my-nginx
 启动一个更复杂Nginx的例子：
 
 ```bash
-# 上面的命令将本地文件中的 nginx.conf 配置文件挂载到容器，并且将要展示的静态页面也挂载到容器。
+# 下面的命令将本地文件中的 nginx.conf 配置文件挂载到容器，并且将要展示的静态页面也挂载到容器。
 docker run --name my-nginx \ 
     -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro \
     -v /some/html:/usr/share/nginx/html:ro \
